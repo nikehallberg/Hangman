@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1 class="game">Hangman</h1>
+    <p class="word" id="wordDisplay">_ _ _ _ _</p>
+    <p class="message" id="message"></p>
+    <canvas id="hangmanCanvas" width="400" height="400"></canvas>
+    <!--<img id="hangmanImage" src="file:///C:/Users/nikeh/Downloads/hangman-game-images/images/hangman-0.svg" alt="Hangman Image">-->
+    <p class="guessed-letters" id="guessedLettersDisplay">Guessed Letters: </p>
+    <div class="guesses">
+        <label for="guessInput">Enter a letter:</label>
+        <input type="text" id="guessInput" maxlength="1">
+        <button class="button" onclick="guessLetter()">Guess</button>
+    </div>
+    <button class="button" onclick="startGame()">Restart Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
